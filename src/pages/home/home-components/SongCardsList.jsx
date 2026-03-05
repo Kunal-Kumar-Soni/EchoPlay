@@ -1,10 +1,11 @@
 import songTypes from "../../../data//songTypes.json";
 
 import { useEffect, useState } from "react";
-import { getData } from "../../../api/api";
+
 import SongCardSkeleton from "../../../ui/SongCardSkeleton";
 import SongCard from "./SongCard";
 import usePlayMusic from "../../../hooks/usePlayMusic";
+import { getData } from "../../../utils/api";
 
 //For multiple card
 function SongCardsList() {
@@ -12,10 +13,7 @@ function SongCardsList() {
   const shuffleSongTypesFn = () => {
     for (let i = songTypes.length - 1; i >= 0; i--) {
       let tempIndex = Math.floor(Math.random() * (i + 1));
-      [songTypes[tempIndex], songTypes[i]] = [
-        songTypes[i],
-        songTypes[tempIndex],
-      ];
+      [songTypes[tempIndex], songTypes[i]] = [songTypes[i], songTypes[tempIndex]];
     }
     return songTypes;
   };

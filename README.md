@@ -77,7 +77,6 @@ npm run dev
 echoPlay/
 ├── public/ # Static assets
 ├── src/
-│ ├── api/ # API service utilities (Axios, Fetch wrappers)
 │ ├── components/ # Reusable UI components
 │ ├── context/ # Global state using Context API
 │ ├── hooks/ # Custom React hooks

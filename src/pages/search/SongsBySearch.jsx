@@ -1,6 +1,6 @@
 import { Search, Mic, Music } from "lucide-react";
 import { useEffect, useState } from "react";
-import { getSongsByArtist } from "../../api/api";
+import { getSongsByArtist } from "../../utils/api";
 import { useNavigate, useParams } from "react-router-dom";
 import SearchSongCardSkeletonList from "../../ui/SearchSongCardSkeletonList";
 import useSearchText from "../../hooks/useSearchText";
@@ -35,9 +35,7 @@ function SongsBySearch() {
         const res = await getSongsByArtist(query, curPage);
         const newResults = res?.data?.results || [];
 
-        setSongs((prev) =>
-          curPage === 1 ? newResults : [...prev, ...newResults]
-        );
+        setSongs((prev) => (curPage === 1 ? newResults : [...prev, ...newResults]));
 
         if (newResults.length < LIMIT) setHasMore(false);
       } catch (error) {
@@ -72,10 +70,7 @@ function SongsBySearch() {
     navigation(`/search/${transcript}`);
   };
 
-  const { listening, startListening } = useVoiceRecognition(
-    handleVoiceSearch,
-    pauseMusic
-  );
+  const { listening, startListening } = useVoiceRecognition(handleVoiceSearch, pauseMusic);
 
   return (
     <div className="px-4 pt-20 lg:pl-65 min-h-[60vh]">
@@ -99,11 +94,7 @@ function SongsBySearch() {
           onClick={startListening}
           type="button"
           className={`relative ml-1 p-3 rounded-full text-white transition duration-200 cursor-pointer shadow-md
-    ${
-      listening
-        ? "bg-red-600 animate-pulse"
-        : "bg-indigo-600 hover:bg-indigo-800"
-    }
+    ${listening ? "bg-red-600 animate-pulse" : "bg-indigo-600 hover:bg-indigo-800"}
   `}
           title="Voice Search"
         >

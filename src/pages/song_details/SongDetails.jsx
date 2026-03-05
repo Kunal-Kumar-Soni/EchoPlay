@@ -1,7 +1,7 @@
 import { Play, EllipsisVertical } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getSongById } from "../../api/api";
+import { getSongById } from "../../utils/api";
 import formatDuration from "../../utils/formatDuration";
 import { GoHeart, GoHeartFill } from "react-icons/go";
 import SongDetailsSkeleton from "../../ui/SongDetailsSkeleton";
@@ -17,8 +17,7 @@ function SongDetails() {
   const [isLoading, setIsLoading] = useState(false);
   const [openMenuDropdown, setOpenMenuDropdown] = useState(false);
   const [openPlaylistsDropdown, setOpenPlaylistsDropdown] = useState(false);
-  const { alreadyAdded, addToFavorite, removeFromFavorite } =
-    useFavoriteSongs();
+  const { alreadyAdded, addToFavorite, removeFromFavorite } = useFavoriteSongs();
   const { setPlayMusicSong } = usePlayMusic();
 
   const fetchSongDetails = async () => {
@@ -44,7 +43,7 @@ function SongDetails() {
       removeFromFavorite(songDetails.id);
       toast.error(
         `Removed "${decodeHtmlEntities(songDetails.name)}" from favorites`,
-        { toastId: "remove-fav" } // prevent repeat
+        { toastId: "remove-fav" }, // prevent repeat
       );
     } else {
       addToFavorite(songDetails);
@@ -97,13 +96,11 @@ function SongDetails() {
                 {formatDuration(songDetails.duration)} min
               </p>
               <p>
-                <span className="font-semibold">Label:</span>{" "}
-                {songDetails.label}
+                <span className="font-semibold">Label:</span> {songDetails.label}
               </p>
               {songDetails.releaseDate && (
                 <p>
-                  <span className="font-semibold">Release Date:</span>{" "}
-                  {songDetails.releaseDate}
+                  <span className="font-semibold">Release Date:</span> {songDetails.releaseDate}
                 </p>
               )}
             </div>
@@ -147,9 +144,7 @@ function SongDetails() {
                   <div className="top-12 right-0 z-30 absolute bg-white dark:bg-gray-800 shadow-lg border border-gray-200 dark:border-gray-700 rounded-md sm:w-35 smallest:w-28 lg:w-40">
                     {/* Add to Playlist Button */}
                     <button
-                      onClick={() =>
-                        setOpenPlaylistsDropdown(!openPlaylistsDropdown)
-                      }
+                      onClick={() => setOpenPlaylistsDropdown(!openPlaylistsDropdown)}
                       className="block hover:bg-gray-100 dark:hover:bg-gray-700 px-3 py-2 w-full text-gray-700 sm:text-[15px] smallest:text-[12px] dark:text-gray-200 lg:text-sm text-center cursor-pointer"
                     >
                       Add to Playlist
@@ -178,9 +173,7 @@ function SongDetails() {
         {songDetails.description && (
           <div className="mt-10 text-gray-800 dark:text-gray-300 text-sm leading-relaxed">
             <h3 className="mb-2 font-semibold text-lg">About this Song</h3>
-            <p className="bg-gray-100 dark:bg-gray-800 p-4 rounded-xl">
-              {songDetails.description}
-            </p>
+            <p className="bg-gray-100 dark:bg-gray-800 p-4 rounded-xl">{songDetails.description}</p>
           </div>
         )}
       </div>
