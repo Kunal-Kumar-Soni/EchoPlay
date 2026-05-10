@@ -93,4 +93,6 @@ echoPlay/
 
 ---
 
-> Designed & developed with ❤️ by Kunal Kumar Soni
+## Author
+
+Kunal Kumar Soni
