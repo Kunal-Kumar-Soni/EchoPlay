@@ -1,11 +1,11 @@
-# 🎧 echoPlay - Your Personal Music Streaming App
+# echoPlay - Your Personal Music Streaming App
 
 Welcome to **echoPlay**, a fully responsive and interactive music streaming app built using React.  
 From smooth audio playback to creating playlists, voice search, and more — echoPlay delivers a seamless listening experience with an elegant UI.
 
 ---
 
-## 🚀 Features
+## Features
 
 - 🎵 **Play & Pause** Controls  
   Smooth playback handling with real-time control of the audio player.
@@ -42,7 +42,7 @@ From smooth audio playback to creating playlists, voice search, and more — ech
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **React** with Hooks
 - **React Router DOM**
@@ -54,7 +54,7 @@ From smooth audio playback to creating playlists, voice search, and more — ech
 
 ---
 
-## 📦 Installation & Run
+## Installation & Run
 
 ```bash
 # 1. Clone the repository
@@ -70,7 +70,7 @@ npm install
 npm run dev
 ```
 
-## ⚙️ Folder Structure
+## Folder Structure
 
 ```
 
@@ -87,7 +87,7 @@ echoPlay/
 
 ```
 
-## 🤝 Acknowledgements
+## Acknowledgements
 
 - Inspired by real-world music app like Spotify and JioSaavan.
 
