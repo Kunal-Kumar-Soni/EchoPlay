@@ -7,37 +7,37 @@ From smooth audio playback to creating playlists, voice search, and more — ech
 
 ## Features
 
-- 🎵 **Play & Pause** Controls  
+- **Play & Pause** Controls  
   Smooth playback handling with real-time control of the audio player.
 
-- ⏮️⏭️ **Previous & Next Song Support**  
+- **Previous & Next Song Support**  
   Easily switch between songs in your playlist or collection.
 
-- 🔁 **Repeat** & 🔀 **Shuffle** Modes  
+- **Repeat** & **Shuffle** Modes  
   Loop your favorite song or play songs in random order.
 
-- 🗣️ **Voice Search Integration**  
+- **Voice Search Integration**  
   Search your songs quickly and effortlessly using your voice.
 
-- 🌟 **Shimmer UI for Loading States**  
+- **Shimmer UI for Loading States**  
   Beautiful shimmer/skeleton effects shown during data loading for a polished user experience.
 
-- 📃 **Playlist Creation & Management**  
+- **Playlist Creation & Management**  
   Create, rename, delete, and manage multiple playlists effortlessly.
 
-- ❤️ **Favorites Section**  
+- **Favorites Section**  
   Like your favorite tracks and find them all in one dedicated "Favorites" section.
 
-- 🎶 **Mini Music Player**  
+- **Mini Music Player**  
   Always-visible compact player with controls while you browse the app.
 
-- 💡 **Dark & Light Mode Support**  
+- **Dark & Light Mode Support**  
   Toggle between themes or follow system preferences for night/day modes.
 
-- 📱 **Mobile Responsive UI**  
+- **Mobile Responsive UI**  
   Designed to work perfectly across mobile, tablet, and desktop screens.
 
-- 💽 **LocalStorage Integration**  
+- **LocalStorage Integration**  
   All your data (liked songs, playlists, last played) is stored locally and restored automatically.
 
 ---
