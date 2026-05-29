@@ -54,22 +54,6 @@ From smooth audio playback to creating playlists, voice search, and more — ech
 
 ---
 
-## Installation & Run
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/Kunal-Kumar-Soni/MusicApp.git
-
-# 2. Navigate to the project directory
-cd EchoPlay
-
-# 3. Install dependencies
-npm install
-
-# 4. Start the development server
-npm run dev
-```
-
 ## Folder Structure
 
 ```
