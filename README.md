@@ -71,12 +71,6 @@ echoPlay/
 
 ```
 
-## Acknowledgements
-
-- Inspired by real-world music app like Spotify and JioSaavan.
-
----
-
 ## Author
 
 Kunal Kumar Soni
