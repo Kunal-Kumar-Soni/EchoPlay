@@ -34,12 +34,6 @@ From smooth audio playback to creating playlists, voice search, and more — ech
 - **Dark & Light Mode Support**  
   Toggle between themes or follow system preferences for night/day modes.
 
-- **Mobile Responsive UI**  
-  Designed to work perfectly across mobile, tablet, and desktop screens.
-
-- **LocalStorage Integration**  
-  All your data (liked songs, playlists, last played) is stored locally and restored automatically.
-
 ---
 
 ## Tech Stack
